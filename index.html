@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="./public/styles.css" />
     <title>Tailwind CSS</title>
   </head>
-
   <body>
-    <header class="px-2 border-b">
+    <header class="px-2 border-b flex items-center justify-between">
       <a href="#" class="uppercase font-bold text-purple-800">Tailwind</a>
-      <nav>
-        <ul class="text-gray-500 font-semibold">
+      <nav class="flex items-center">
+        <ul class="text-gray-500 font-semibold inline-flex items-center">
           <li>
             <a
               href="#"
@@ -37,17 +36,140 @@
             </a>
           </li>
         </ul>
+        <ul class="inline-flex items-center">
+          <li>
+            <button
+              class="ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:ring-violet-300"
+            >
+              Login
+            </button>
+          </li>
+          <li>
+            <button
+              class="ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:ring-violet-300"
+            >
+              Register
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div>
-        <div class="py-4 overflow-y-auto whitespace-nowrap">
+      <div class="px-2 flex items-center">
+        <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
           <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
           <span class="mx-2 text-gray-500">&gt;</span>
           <a href="#" class="text-gray-600 hover:text-gray-900">News</a>
           <span class="text-gray-500">&gt;</span>
           <a href="#" class="text-gray-600 hover:text-gray-900">Tech</a>
         </div>
+      </div>
+      <section class="px-2">
+        <a class="block mb-10" href="#">
+          <div class="flex">
+            <div>
+              <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                Lorem Ipsum is simply dummy text of the pri
+              </h3>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente amet suscipit ducimus dignissimos debitis voluptatibus
+                harum ab, odio recusandae tempora voluptatem explicabo eius
+                praesentium earum ipsum neque doloremque quas molestiae.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="block mb-10" href="#">
+          <div class="flex">
+            <div>
+              <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                Lorem Ipsum is simply dummy text of the pri
+              </h3>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente amet suscipit ducimus dignissimos debitis voluptatibus
+                harum ab, odio recusandae tempora voluptatem explicabo eius
+                praesentium earum ipsum neque doloremque quas molestiae.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="block mb-10" href="#">
+          <div class="flex">
+            <div>
+              <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                Lorem Ipsum is simply dummy text of the pri
+              </h3>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente amet suscipit ducimus dignissimos debitis voluptatibus
+                harum ab, odio recusandae tempora voluptatem explicabo eius
+                praesentium earum ipsum neque doloremque quas molestiae.
+              </p>
+            </div>
+          </div>
+        </a>
+      </section>
+      <div class="mt-20 mb-10">
+        <ul class="flex justify-center">
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-l-lg"
+              href="#"
+            >
+              Previous
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              href="#"
+            >
+              1
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              href="#"
+            >
+              2
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-blue-600 hover:bg-blue-100"
+              href="#"
+            >
+              3
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              href="#"
+            >
+              4
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              href="#"
+            >
+              5
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg"
+              href="#"
+            >
+              Next
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="border border-dotted"></div>
       <div class="my-5">
@@ -60,6 +182,11 @@
           type="text"
           class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
         />
+        <button
+          class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800"
+        >
+          Subscribe
+        </button>
       </div>
       <div class="border border-dotted"></div>
     </main>
