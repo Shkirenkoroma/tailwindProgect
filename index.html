@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/styles.css" />
     <title>Tailwind CSS</title>
   </head>
-  <body>
+  <body class="bg-white dark:bg-slate-900">
     <div class="max-w-screen-xl mx-auto">
       <header class="px-2 border-b flex items-center justify-between h-14">
-        <a href="#" class="uppercase font-bold text-purple-800">Tailwind</a>
+        <a
+          href="#"
+          class="dark:text-purple-500 uppercase font-bold text-purple-800"
+        >
+          Tailwind
+        </a>
         <nav class="hidden md:flex items-center">
           <ul class="inline-flex items-center">
             <li>
@@ -62,7 +67,7 @@
         <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
           <a
             href="#"
-            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +102,7 @@
           </span>
           <a
             href="#"
-            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300"
           >
             News
           </a>
@@ -119,7 +124,7 @@
           </span>
           <a
             href="#"
-            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+            class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300"
           >
             Tech
           </a>
@@ -144,6 +149,11 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
               modi harum, ullam sunt voluptas aliquid minima!
             </h2>
+            <span
+              class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2"
+            >
+              React
+            </span>
             <div class="flex mt-3">
               <img
                 class="h-10 w-10 rounded-full mr-2 object-cover"
@@ -172,9 +182,13 @@
           />
           <div class="p-4 absolute bottom-0 left-0 z-20">
             <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              modi harum, ullam sunt voluptas aliquid minima!
+              Soluta modi harum, ullam sunt voluptas aliquid minima!
             </h2>
+            <span
+              class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2"
+            >
+              Angular
+            </span>
             <div class="flex mt-3">
               <img
                 class="h-10 w-10 rounded-full mr-2 object-cover"
@@ -201,10 +215,12 @@
               />
               <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem Ipsum is simply dummy text of the pri
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sapiente amet suscipit ducimus dignissimos debitis
                     voluptatibus harum ab, odio recusandae tempora voluptatem
@@ -235,10 +251,12 @@
               />
               <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem Ipsum is simply dummy text of the pri
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sapiente amet suscipit ducimus dignissimos debitis
                     voluptatibus harum ab, odio recusandae tempora voluptatem
@@ -269,10 +287,12 @@
               />
               <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
+                  <h3
+                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
+                  >
                     Lorem Ipsum is simply dummy text of the pri
                   </h3>
-                  <p class="text-gray-700">
+                  <p class="text-gray-700 dark:text-slate-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sapiente amet suscipit ducimus dignissimos debitis
                     voluptatibus harum ab, odio recusandae tempora voluptatem
@@ -343,52 +363,74 @@
           class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0"
         >
           <div class="w-full md:w-1/2 lg:w-full mb-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
+            <h5
+              class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2"
+            >
               Popular News
             </h5>
             <ul>
               <li
-                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
               >
-                <a href="#" class="flex items-center text-gray-600">
+                <a
+                  href="#"
+                  class="dark:text-slate-400 flex items-center text-gray-600"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"
                   ></span>
                   Vue
-                  <span class="text-gray-500 ml-auto">23 articles</span>
+                  <span class="dark:text-slate-400text-gray-500 ml-auto">
+                    23 articles
+                  </span>
                 </a>
               </li>
               <li
-                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
               >
-                <a href="#" class="flex items-center text-gray-600">
+                <a
+                  href="#"
+                  class="dark:text-slate-400 flex items-center text-gray-600"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"
                   ></span>
                   Svelte
-                  <span class="text-gray-500 ml-auto">20 articles</span>
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">
+                    20 articles
+                  </span>
                 </a>
               </li>
               <li
-                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
               >
-                <a href="#" class="flex items-center text-gray-600">
+                <a
+                  href="#"
+                  class="dark:text-slate-400 flex items-center text-gray-600"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"
                   ></span>
                   Angular
-                  <span class="text-gray-500 ml-auto">15 articles</span>
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">
+                    15 articles
+                  </span>
                 </a>
               </li>
               <li
-                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
               >
-                <a href="#" class="flex items-center text-gray-600">
+                <a
+                  href="#"
+                  class="dark:text-slate-400 flex items-center text-gray-600"
+                >
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"
                   ></span>
                   React
-                  <span class="text-gray-500 ml-auto">7 articles</span>
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">
+                    7 articles
+                  </span>
                 </a>
               </li>
             </ul>
@@ -397,10 +439,14 @@
           <div class="w-full md:w-1/2 lg:w-full">
             <div class="border border-dotted"></div>
             <div class="my-5 md:my-0 lg:my-5">
-              <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
+              <h5
+                class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2"
+              >
                 Subscribe
               </h5>
-              <p class="text-gray-600 mb-4">Subscribe to our newsletter.</p>
+              <p class="dark:text-slate-400 text-gray-600 mb-4">
+                Subscribe to our newsletter.
+              </p>
               <input
                 placeholder="your email address"
                 type="text"
@@ -420,7 +466,9 @@
       <footer class="border-t mt-10 py-10 px-2">
         <div class="md:flex">
           <div class="w-full mb-5 md:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Company</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Company
+            </h6>
             <ul>
               <li>
                 <a href="#" class="footer-link">
@@ -435,7 +483,9 @@
             </ul>
           </div>
           <div class="w-full mb-5 md:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Content</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Content
+            </h6>
             <ul>
               <li>
                 <a
@@ -468,7 +518,9 @@
             </ul>
           </div>
           <div class="w-full md:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-3">Contact Us</h6>
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">
+              Contact Us
+            </h6>
             <ul class="flex">
               <li class="mr-2">
                 <a
