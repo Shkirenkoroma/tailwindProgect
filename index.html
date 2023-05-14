@@ -30,12 +30,12 @@
           </ul>
           <ul class="inline-flex items-center">
             <li>
-              <button class="header-btn">
+              <button class="header-btn transition-all duration-300">
                 Login
               </button>
             </li>
             <li>
-              <button class="header-btn">
+              <button class="header-btn transition-all duration-300">
                 Register
               </button>
             </li>
@@ -60,7 +60,10 @@
       </header>
       <div class="px-2 flex items-center">
         <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-          <a href="#" class="text-gray-600 hover:text-gray-900">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -92,7 +95,12 @@
               />
             </svg>
           </span>
-          <a href="#" class="text-gray-600 hover:text-gray-900">News</a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+          >
+            News
+          </a>
           <span class="text-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +117,12 @@
               />
             </svg>
           </span>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Tech</a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-all duration-300"
+          >
+            Tech
+          </a>
         </div>
       </div>
 
@@ -131,6 +144,17 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
               modi harum, ullam sunt voluptas aliquid minima!
             </h2>
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/men/1.jpg"
+                alt="author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                <time class="text-gray-400 text-xs">14 march</time>
+              </div>
+            </div>
           </div>
         </a>
 
@@ -151,6 +175,17 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
               modi harum, ullam sunt voluptas aliquid minima!
             </h2>
+            <div class="flex mt-3">
+              <img
+                class="h-10 w-10 rounded-full mr-2 object-cover"
+                src="https://randomuser.me/api/portraits/men/2.jpg"
+                alt="author"
+              />
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">Colin Pharell</p>
+                <time class="text-gray-400 text-xs">5 april</time>
+              </div>
+            </div>
           </div>
         </a>
       </section>
@@ -164,7 +199,7 @@
                 src="./public/images/3.jpg"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
                   <h3 class="mb-2 text-gray-700 font-bold text-2xl">
                     Lorem Ipsum is simply dummy text of the pri
@@ -176,6 +211,19 @@
                     explicabo eius praesentium earum ipsum neque doloremque quas
                     molestiae.
                   </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/3.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">
+                      Will Graham
+                    </p>
+                    <time class="text-gray-400 text-xs">22 october</time>
+                  </div>
                 </div>
               </div>
             </a>
@@ -185,7 +233,7 @@
                 src="./public/images/4.jpg"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
                   <h3 class="mb-2 text-gray-700 font-bold text-2xl">
                     Lorem Ipsum is simply dummy text of the pri
@@ -198,6 +246,19 @@
                     molestiae.
                   </p>
                 </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/4.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">
+                      Antony Smith
+                    </p>
+                    <time class="text-gray-400 text-xs">2 september</time>
+                  </div>
+                </div>
               </div>
             </a>
             <a class="block w-full lg:flex mb-10" href="#">
@@ -206,7 +267,7 @@
                 src="./public/images/6.jpg"
                 alt="img"
               />
-              <div class="flex">
+              <div class="flex flex-col justify-between">
                 <div>
                   <h3 class="mb-2 text-gray-700 font-bold text-2xl">
                     Lorem Ipsum is simply dummy text of the pri
@@ -218,6 +279,19 @@
                     explicabo eius praesentium earum ipsum neque doloremque quas
                     molestiae.
                   </p>
+                </div>
+                <div class="flex mt-3">
+                  <img
+                    class="h-10 w-10 rounded-full mr-2 object-cover"
+                    src="https://randomuser.me/api/portraits/men/5.jpg"
+                    alt="author"
+                  />
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">
+                      Mack Kensee
+                    </p>
+                    <time class="text-gray-400 text-xs">11 april</time>
+                  </div>
                 </div>
               </div>
             </a>
@@ -241,7 +315,7 @@
               </li>
               <li>
                 <a
-                  class="link-style text-blue-600 hover:bg-blue-100 hover:text-blue-600"
+                  class="link-style text-blue-600 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300"
                   href="#"
                 >
                   3
@@ -273,7 +347,9 @@
               Popular News
             </h5>
             <ul>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+              <li
+                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
                 <a href="#" class="flex items-center text-gray-600">
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"
@@ -282,7 +358,9 @@
                   <span class="text-gray-500 ml-auto">23 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+              <li
+                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
                 <a href="#" class="flex items-center text-gray-600">
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"
@@ -291,7 +369,9 @@
                   <span class="text-gray-500 ml-auto">20 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+              <li
+                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
                 <a href="#" class="flex items-center text-gray-600">
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"
@@ -300,7 +380,9 @@
                   <span class="text-gray-500 ml-auto">15 articles</span>
                 </a>
               </li>
-              <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+              <li
+                class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300"
+              >
                 <a href="#" class="flex items-center text-gray-600">
                   <span
                     class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"
@@ -325,7 +407,7 @@
                 class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
               />
               <button
-                class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800"
+                class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300"
               >
                 Subscribe
               </button>
@@ -357,7 +439,7 @@
             <ul>
               <li>
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   Block
@@ -367,7 +449,7 @@
             <ul>
               <li>
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   Policy
@@ -377,7 +459,7 @@
             <ul>
               <li>
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   Documentation
@@ -390,7 +472,7 @@
             <ul class="flex">
               <li class="mr-2">
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   <svg
@@ -411,7 +493,7 @@
               </li>
               <li li class="mr-2">
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   <svg
@@ -431,7 +513,7 @@
               </li>
               <li li class="mr-2">
                 <a
-                  class="inline-block text-gray-500 py-2 hover:underline"
+                  class="inline-block text-gray-500 py-2 hover:underline transition-all duration-300"
                   href="#"
                 >
                   <svg
